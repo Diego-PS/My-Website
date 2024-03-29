@@ -1,0 +1,103 @@
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.collapsible-accordion {
+  width: 100%;
+  margin: 10px;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.collapsible-item-label {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: cadetblue;
+  border-radius: 1.2rem;
+  height: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.collapsible-item-label::after {
+  content: "\276F";
+  transform: rotate(90deg);
+  color: white;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all .35s;
+  margin-right: 1rem;
+}
+
+.collapsible-item-content {
+  max-height: 0;
+  padding: 0 1em;
+  background: white;
+  transition: all 0.35s;
+}
+
+input:checked {
+  + .collapsible-item-label {
+    &::after {
+      transform: rotate(-90deg);
+    }
+  }
+  ~ .collapsible-item-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
+
+.experience-entry-cnt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: cadetblue;
+  border-radius: 1.2rem;
+  height: 6rem;
+  align-items: center;
+
+}
+
+.experience-entry-desc {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.experience-entry-img {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
+
+.experience-h1 {
+  font-size: 15pt;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+
+.experience-h2 {
+  font-size: 12pt;
+  font-weight: 300;
+  margin: 0;
+}
+
+.experience-h3 {
+  font-size: 9pt;
+  font-weight: 200;
+  margin: 0;
+}
+
+.column-div {
+  display: flex;
+  flex-direction: column;
+}

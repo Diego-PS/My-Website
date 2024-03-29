@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+h1, h2, h3, h4 {
+  font-family: "Sora", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Sora", sans-serif;
+  font-size: 11pt;
+  width: 100%;
+  text-align: justify;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+  overflow: auto;
+}
+
+.background-image {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-image: url("./public/background.png");
+  background-size: cover;
+  z-index: -2;
+}
+
+.background-white {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: white;
+  opacity: 0.5;
+  background-size: cover;
+  z-index: -1;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-banner {
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-pic {
+  width: 20rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.name-text {
+  font-size: 50pt;
+  color:cadetblue;
+  margin: 0;
+  font-weight: 600;
+}
+
+.profession-text {
+  font-size: 20pt;
+  font-weight: 500;
+  color:#505050;
+  margin: 0;
+}
+
+.graph-pic {
+  height: 15rem;
+}
+
+.menu-bar {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: cadetblue;
+  border-radius: 1.2rem;
+  border: 2px solid #505050;
+  padding: 0 0.5rem;
+}
+
+.menu-item {
+  width: fit-content;
+  padding: 0 2rem;
+  font-weight: lighter;
+  color: white;
+  overflow: hidden;
+}
+
+.menu-item h3 {
+  font-weight: 300;
+}
+
+.menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer
+}
+
+.section-box {
+  width: 56rem;
+  display: flex;
+  background-color: white;
+  border-radius: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.4);
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  /* border: solid cadetblue 2px */
+}
+
+.section-title {
+  font-weight: 600;
+  color: #505050;
+}
