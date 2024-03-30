@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, li {
   font-family: "Sora", sans-serif;
 }
 
@@ -42,7 +42,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: absolute;
-  background-image: url("./public/background.png");
+  background-image: url("../public/background.png");
   background-size: cover;
   z-index: -2;
 }
@@ -147,4 +147,16 @@ body {
 .section-title {
   font-weight: 600;
   color: #505050;
+}
+
+.column-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 1.5rem;
 }

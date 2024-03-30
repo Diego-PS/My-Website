@@ -1,0 +1,112 @@
+/* flip the pane when clicked */
+.flip-container .flipper.flip {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 100%;
+  height: 20rem;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  cursor: pointer;
+  border-radius: 1.2rem;
+}
+
+/* flip speed */
+.flipper {
+  transition: 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  background-color: cadetblue;
+}
+
+.coluni {
+  background: url("../public/coluni.jpeg") center center no-repeat;
+  background-size: cover;
+}
+
+.ufmg {
+  background: url("../public/ufmg.png") center center no-repeat;
+  background-size: cover;
+}
+
+.education-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: cadetblue;
+  height: 7rem;
+  top: 13rem;
+  gap: 0.3rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+}
+
+.education-title {
+  color: white;
+  font-size: 18pt;
+  font-weight: 500;
+  margin: 0;
+}
+
+.education-subtitle {
+  color: white;
+  font-size: 13pt;
+  font-weight: 300;
+  margin: 0;
+}
+
+.education-h3 {
+  color: white;
+  font-size: 10pt;
+  font-weight: 200;
+  margin: 0;
+}
+
+.education-back {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.achievements-title {
+  font-size: 15pt;
+  font-weight: 400;
+  color: white;
+}
+
+.education-list {
+  margin: 0;
+  color: white;
+  text-overflow: initial;
+  overflow: hidden;
+}
+
+.education-list li {
+  font-size: 11pt;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}

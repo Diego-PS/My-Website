@@ -3,10 +3,12 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="accordion.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/accordion.css">
+  <link rel="stylesheet" href="./styles/flip-card.css">
 </head>
 <body>
+  <script async type="text/javascript" src="./scripts/flip-card.js"></script>
   <div class="background-image"></div>
   <div class="background-white"></div>
   <div class="container">
@@ -188,6 +190,60 @@
       </div>
     </div>
 
+  </div>
+  <div id="education" class="section-box">
+    <h1 class="section-title">Education</h1>
+
+    <div class="row-div">
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front coluni">
+            <div class="education-info">
+              <h1 class="education-title">CAp-COLUNI - UFV</h1>
+              <h2 class="education-subtitle">High school &nbsp;•&nbsp; 2017 - 2019</h2>
+              <h3 class="education-h3">Click to learn more</h3>
+            </div>
+            <!-- front content -->
+          </div>
+          <div class="back">
+            <div class="education-back">
+              <h2 class="achievements-title">What I've learned and achieved</h2>
+              <ul class="education-list">
+                <li>Strong foundation in Mathematics</li>
+                <li>Leadership and communication skills in various teamwork projects</li>
+                <li>Multiple awards in Science and Math competitions</li>
+                <li>Participation in the selection for International Olympiads of Informatics and Astronomy</li>
+                <li>Basics of C++ for competitive programming</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flip-container">
+        <div class="flipper">
+          <div class="front ufmg">
+            <div class="education-info">
+              <h1 class="education-title">Computer Science - UFMG</h1>
+              <h2 class="education-subtitle">Bachelor's degree &nbsp;•&nbsp; 2020 - 2024</h2>
+              <h3 class="education-h3">Click to learn more</h3>
+            </div>
+            <!-- front content -->
+          </div>
+          <div class="back">
+            <div class="education-back">
+              <h2 class="achievements-title">What I've learned and achieved</h2>
+              <ul class="education-list">
+                <li>Programming in C/C++ and python, as well as OO programming</li>
+                <li>Solid base in algorithms and data structures</li>
+                <li>Knowledge of main software engineering procedures</li>
+                <li>Innovation and entrepreneurship, including how to validate a problem and test a solution through MVP</li>
+                <li>Prototyping using Arduino and ESP8266</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
