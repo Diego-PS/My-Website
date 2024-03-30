@@ -6,9 +6,11 @@
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="stylesheet" href="./styles/accordion.css">
   <link rel="stylesheet" href="./styles/flip-card.css">
+  <link rel="stylesheet" href="./styles/carousel.css">
+  <script async type="text/javascript" src="./scripts/flip-card.js"></script>
+  <script defer src="./scripts/carousel.js"></script>
 </head>
 <body>
-  <script async type="text/javascript" src="./scripts/flip-card.js"></script>
   <div class="background-image"></div>
   <div class="background-white"></div>
   <div class="container">
@@ -27,12 +29,12 @@
       <a href="#experience"><div class="menu-item">
         <h3>Experience</h3>
       </div></a>
-      <div class="menu-item">
+      <a href="#education"><div class="menu-item">
         <h3>Education</h3>
-      </div>
-      <div class="menu-item">
+      </div></a>
+      <a href="#projects"><div class="menu-item">
         <h3>Projects</h3>
-      </div>
+      </div></a>
       <div class="menu-item">
         <h3>Skills</h3>
       </div>
@@ -243,6 +245,106 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div id="projects" class="section-box">
+    <h1 class="section-title">Projects</h1>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="project-cnt">
+          <img class="project-img" src="./public/perry.png">
+          <div class="column-div" style="gap: 0.5rem">
+            <h2 class="project-name">Perry</h2>
+            <p>Perry is a workforce transformation company dedicated to building good jobs in healthcare.</p>
+            <p>During my internship at Plank, I worked in the implementation of new features,
+              redesign of the User Interface and even integration with external tools.
+            </p>
+            <p>I also had the opportunity to work closely with the customer success team
+              to adress the main issues and solve bugs.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="project-cnt">
+          <div class="row-div" style="gap: 0.2rem">
+            <img class="project-img shadow" src="./public/snapcat-1.png">
+            <img class="project-img shadow" src="./public/snapcat-2.png">
+            <img class="project-img shadow" src="./public/snapcat-3.png">
+          </div>
+          <div class="column-div" style="gap: 0.5rem">
+            <h2 class="project-name">Snapcat</h2>
+            <p>A simple Proof of Concept for a social media platform where you can register your cats and make posts on their behalf.</p>
+            <p>I developed the backend of the application for a college project, while my teammate was in charge of the frontend for the web app.</p>
+            <p>Later, during my internship, I was challenged to build a mobile app using React Native, so I used the existing design to create the mobile version of the project.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="project-cnt">
+          <div class="row-div" style="gap: 0.2rem">
+            <img class="project-img" src="./public/fountain.png">
+          </div>
+          <div class="column-div" style="gap: 0.5rem">
+            <h2 class="project-name">Fountain</h2>
+            <p>Fountain is an under-development Web3 Operating System for Organizations, providing a way to manage on-chain operations.</p>
+            <p>During my internship at Plank, I briefly worked on implementing the interface for various pages, including the transaction flow.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="project-cnt">
+          <div class="row-div" style="gap: 0.2rem">
+            <img class="project-img" src="./public/mpmg-1.png">
+            <img class="project-img" src="./public/mpmg-2.png">
+          </div>
+          <div class="column-div" style="gap: 0.5rem">
+            <h2 class="project-name">Diary Segmenter</h2>
+            <p>I worked in this project in my last Undergraduate Research Program, it was a demand of the Public Ministry of Minas Gerais.</p>
+            <p>The purpose of the tool is to distinguish all the different documents that compose an official diary, just from its PDF file.</p>
+            <p>The application was successful for diaries from an association of municipalities called AMM and for those of Belo Horizonte. For the latter, we were able to recognize the sections by first converting the PDF to an HTML file.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="project-cnt">
+          <div class="row-div" style="gap: 0.2rem">
+            <img class="project-img" src="./public/engaj.png">
+          </div>
+          <div class="column-div" style="gap: 0.5rem">
+            <h2 class="project-name">Engaj Website</h2>
+            <p>Engaj is a junior enterprise from the Food Engineering course in UFV.</p>
+            <p>Right after I joined iJunior as a member, this was the first project I participated, and my first project for a real client.</p>
+            <p>I worked on some sections for the page using WordPress.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a onclick="plusSlides(-1)">
+        <div class="nav-button-carousel prev">&#10094;</div>
+      </a>
+      <a onclick="plusSlides(1)">
+        <div class="nav-button-carousel next">&#10095;</div>
+        </a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
     </div>
   </div>
 </body>
