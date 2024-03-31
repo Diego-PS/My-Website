@@ -110,3 +110,100 @@
   font-weight: 200;
   margin-bottom: 0.5rem;
 }
+
+.education-div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .education-div {
+    flex-direction: column;
+  }
+
+  .flip-container, .front, .back {
+    width: 100%;
+    height: 40rem;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    cursor: pointer;
+    border-radius: 1.2rem;
+  }
+
+  .education-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: cadetblue;
+    height: 14rem;
+    top: 26rem;
+    gap: 0.3rem;
+    border-radius: 0 0 1.2rem 1.2rem;
+  }
+
+  .education-title {
+    color: white;
+    font-size: 36pt;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .education-subtitle {
+    color: white;
+    font-size: 26pt;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .education-h3 {
+    color: white;
+    font-size: 20pt;
+    font-weight: 200;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .achievements-title {
+    font-size: 30pt;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .education-list {
+    margin: 0 1rem;
+    color: white;
+    text-overflow: initial;
+    overflow: hidden;
+  }
+  
+  .education-list li {
+    font-size: 24pt;
+    font-weight: 200;
+    margin-bottom: 1rem;
+  }
+
+  .education-back {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

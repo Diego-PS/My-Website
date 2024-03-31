@@ -47,7 +47,7 @@ input {
 input:checked {
   + .collapsible-item-label {
     &::after {
-      transform: rotate(-90deg);
+      transform: rotate(-90deg) translate(0, -1rem);
     }
   }
   ~ .collapsible-item-content {
@@ -96,4 +96,55 @@ input:checked {
   font-size: 9pt;
   font-weight: 200;
   margin: 0;
+}
+
+.experience-desc-div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+  .collapsible-item-label {
+    height: 15rem;
+  }
+
+  .experience-entry-img {
+    width: 12rem;
+    height: 12rem;
+    margin-left: 1.5rem;
+  }
+
+  .experience-h1 {
+    font-size: 28pt;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+  }
+  
+  .experience-h2 {
+    font-size: 24pt;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+  .experience-h3 {
+    font-size: 20pt;
+    font-weight: 200;
+    margin: 0;
+  }
+
+  .collapsible-item-label::after {
+    font-size: 30pt;
+  }
+
+  .experience-desc-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .collapsible-item-content p {
+    font-size: 20pt;
+  }
 }
