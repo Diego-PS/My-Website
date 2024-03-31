@@ -244,4 +244,75 @@ body {
   p {
     font-size: 9pt;
   }
+
+  .skills-cnt {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+  }
+
+  .skill-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2.5rem;
+    width: 26rem;
+    height: 5rem;
+    color: white;
+  }
+  
+  .skill-box h3 {
+    font-size: 19pt;
+    margin-left: 2rem;
+    font-weight: 500;
+    max-width: 13rem;
+  }
+
+  .rating-cnt {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1.5rem;
+  }
+  
+  .circle-full {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: white;
+    border: solid 2px white;
+    border-radius: 50%;
+  }
+  
+  .circle-border {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 50%;
+  }
+  
+  .circle-half-cnt {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    gap: 0;
+  }
+  
+  .circle-half-full {
+    width: 0.75rem;
+    height: 1.5rem;
+    background-color: white;
+    border-radius: 0.75rem 0 0 0.75rem;
+  }
+  
+  .circle-half-border {
+    width: 0.75rem;
+    height: 1.5rem;
+    background-color: transparent;
+    border: solid 2px white;
+    border-left: 0;
+    border-radius: 0 0.75rem 0.75rem 0;
+  }
 }
