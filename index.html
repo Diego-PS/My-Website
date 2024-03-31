@@ -80,7 +80,7 @@
 
     <div class="collapsible-accordion">
       <div class="collapsible-item">
-        <input type="checkbox" id="tab1">
+        <input type="checkbox" id="tab1" class="accordion-input">
         <label class="collapsible-item-label" for="tab1">
           <div class="experience-entry-desc">
             <img class="experience-entry-img" src="./public/plank.jpeg" />
@@ -107,7 +107,7 @@
 
     <div class="collapsible-accordion">
       <div class="collapsible-item">
-        <input type="checkbox" id="tab2">
+        <input type="checkbox" id="tab2" class="accordion-input">
         <label class="collapsible-item-label" for="tab2">
           <div class="experience-entry-desc">
             <img class="experience-entry-img" src="./public/dcc.jpeg" />
@@ -128,7 +128,7 @@
 
     <div class="collapsible-accordion">
       <div class="collapsible-item">
-        <input type="checkbox" id="tab3">
+        <input type="checkbox" id="tab3" class="accordion-input">
         <label class="collapsible-item-label" for="tab3">
           <div class="experience-entry-desc">
             <img class="experience-entry-img" src="./public/dcc.jpeg" />
@@ -152,7 +152,7 @@
 
     <div class="collapsible-accordion">
       <div class="collapsible-item">
-        <input type="checkbox" id="tab4">
+        <input type="checkbox" id="tab4" class="accordion-input">
         <label class="collapsible-item-label" for="tab4">
           <div class="experience-entry-desc">
             <img class="experience-entry-img" src="./public/ijunior.jpeg" />
@@ -173,7 +173,7 @@
 
     <div class="collapsible-accordion">
       <div class="collapsible-item">
-        <input type="checkbox" id="tab5">
+        <input type="checkbox" id="tab5" class="accordion-input">
         <label class="collapsible-item-label" for="tab5">
           <div class="experience-entry-desc">
             <img class="experience-entry-img" src="./public/ijunior.jpeg" />
@@ -585,17 +585,19 @@
     <form
       action="https://formspree.io/f/xleqpppv"
       method="POST"
+      class="contact-form"
     >
-      <label>
-        Your email:
-        <input type="email" name="email" style="width: 5rem;"></input>
-      </label>
-      <label>
-        Your message:
-        <textarea name="message"></textarea>
-      </label>
-      <!-- your other form fields go here -->
-      <button type="submit">Send</button>
+      <div class="form-section">
+        <label for="email">Your email:</label>
+        <input id="email" type="email" name="email" class="contact-input shadow" placeholder="yourname@example.com" />
+      </div>
+      <div class="form-section">
+        <label for="message">Your message:</label>
+        <textarea id="message" name="message" class="shadow" placeholder="Write your message here"></textarea>
+      </div>
+      <div class="button-cnt">
+        <button type="submit">Send</button>
+      </div>
     </form>
   </div>
 </body>

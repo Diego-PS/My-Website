@@ -1,4 +1,4 @@
-input {
+.accordion-input {
   position: absolute;
   opacity: 0;
   z-index: -1;
@@ -44,7 +44,7 @@ input {
   overflow: hidden;
 }
 
-input:checked {
+.accordion-input:checked {
   + .collapsible-item-label {
     &::after {
       transform: rotate(-90deg) translate(0, -1rem);
