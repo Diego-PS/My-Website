@@ -160,3 +160,75 @@ body {
   flex-direction: row;
   gap: 1.5rem;
 }
+
+.skills-cnt {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+  width: 17rem;
+  height: 2.5rem;
+  color: white;
+}
+
+.skill-box h3 {
+  font-size: 13pt;
+  margin-left: 0.7rem;
+  font-weight: 500;
+}
+
+.rating-cnt {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  align-items: center;
+  margin-right: 0.7rem;
+}
+
+.circle-full {
+  width: 1rem;
+  height: 1rem;
+  background-color: white;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+
+.circle-border {
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+
+.circle-half-cnt {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  gap: 0;
+}
+
+.circle-half-full {
+  width: 0.5rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.circle-half-border {
+  width: 0.5rem;
+  height: 1rem;
+  background-color: transparent;
+  border: solid 2px white;
+  border-left: 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
