@@ -129,3 +129,144 @@
 .shadow {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
 }
+
+.image-cnt {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem
+}
+
+.project-info-cnt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+.dots {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align:center;
+  gap: 0.3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-cnt {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .project-img {
+    width: 100%;
+    max-height: none;
+    max-width: none;
+    overflow: hidden;
+  }
+
+  .image-cnt {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: 0;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin: 0;
+    height: 100%;
+  }
+
+  .nav-button-carousel {
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    margin-top: -2rem;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .project-cnt p {
+    text-align: left;
+    font-size: 20pt;
+    color: #505050;
+    margin: 0;
+  }
+
+  .project-name {
+    font-size: 30pt;
+    color: #505050;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+  }
+
+  .project-info-cnt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+  }
+
+  .prev, .next {
+    font-size: 35pt;
+    text-align: center;
+  }
+
+  .slideshow-container {
+    padding-bottom: 3rem;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: cadetblue;
+  }
+
+  .prev:active, .next:active {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dots {
+    position: relative;
+    top: -1.5rem;
+    width: fit-content;
+    gap: 0.5rem;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+}
