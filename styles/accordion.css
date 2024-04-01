@@ -22,7 +22,6 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-
 }
 
 .collapsible-item-label::after {
@@ -147,5 +146,11 @@
 
   .collapsible-item-content p {
     font-size: 20pt;
+  }
+
+  .experience-entry-desc {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
   }
 }

@@ -73,15 +73,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 56rem;
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.4);
+  border-radius: 1.2rem;
 }
 
 .main-banner {
-  width: 50rem;
+  width: 56rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1.2rem 1.2rem 0 0;
+  gap: 1rem;
 }
 
 .profile-pic {
@@ -118,14 +123,35 @@ body {
   flex-direction: row;
   justify-content: space-between;
   background-color: cadetblue;
-  border-radius: 1.2rem;
-  border: 2px solid #505050;
-  padding: 0 0.5rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+  padding: 0 1rem;
+  width: 56rem;
+}
+
+.mobile-bar {
+  display: none;
+}
+
+.icons-bar {
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 0 0 1.2rem 1.2rem;
+  padding: 0 8rem;
+  width: 56rem;
+  height: 10rem;
+  align-items: center;
 }
 
 .menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   width: fit-content;
-  padding: 0 2rem;
+  padding: 0 1rem;
   font-weight: lighter;
   color: white;
   overflow: hidden;
@@ -148,7 +174,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: 0 0 10px rgba(50, 50, 50, 0.4);
+  box-shadow: 0 0 20px rgba(50, 50, 50, 0.4);
   padding: 2rem;
   /* border: solid cadetblue 2px */
 }
@@ -335,7 +361,7 @@ button:hover {
   }
 
   p {
-    font-size: 8pt;
+    font-size: 20pt;
   }
 
   .skills-cnt {
@@ -483,5 +509,62 @@ button:hover {
 
   #projects {
     padding-bottom: 4.5rem;
+  }
+
+  .main-banner {
+    width: 56rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+
+  .name-text {
+    font-size: 80pt;
+    color:cadetblue;
+    margin: 0;
+    margin-top: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .profession-text {
+    font-size: 35pt;
+    font-weight: 500;
+    color:#505050;
+    margin: 0;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 35rem;
+  }
+
+  .menu-bar {
+    display: none;
+  }
+
+  .menu-item {
+    display: none;
+    width: fit-content;
+    padding: 0 2rem;
+    font-weight: lighter;
+    color: white;
+    overflow: hidden;
+    height: auto;
+  }
+
+  .mobile-bar {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: cadetblue;
+    border-radius: 0 0 1.2rem 1.2rem;
+    width: 56rem;
+    height: fit-content;
+    align-items: center;
   }
 }
