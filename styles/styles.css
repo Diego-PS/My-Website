@@ -14,8 +14,14 @@ p {
   width: 100%;
   text-align: justify;
   margin: 0;
-  margin-bottom: 1rem;
   color: #505050;
+}
+
+.p-cnt {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
 }
 
 body {
@@ -24,6 +30,9 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
+  overflow: -moz-hidden-unscrollable;
+  overflow: hidden;
+  position: fixed;
 }
 
 .container {
@@ -34,6 +43,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  padding: 2rem 0;
   gap: 2rem;
   height: 100vh;
   overflow: auto;
@@ -139,13 +149,13 @@ body {
   align-items: center;
   flex-direction: column;
   box-shadow: 0 0 10px rgba(50, 50, 50, 0.4);
-  padding: 0 2rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  padding: 2rem;
   /* border: solid cadetblue 2px */
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 2rem;
   font-weight: 600;
   color: #505050;
 }
@@ -305,6 +315,18 @@ button:hover {
   justify-content: center;
 }
 
+.more {
+  display: none;
+}
+
+.bio-btn {
+  margin-top: 2rem;
+  width: 10rem;
+  height: 2rem;
+  font-size: 13pt;
+  font-weight: 400;
+}
+
 @media only screen and (max-width: 1000px) {
   .section-title {
     font-size: 40pt;
@@ -313,7 +335,7 @@ button:hover {
   }
 
   p {
-    font-size: 9pt;
+    font-size: 8pt;
   }
 
   .skills-cnt {
@@ -449,5 +471,17 @@ button:hover {
   
   button:hover {
     background-color: rgb(41, 106, 107);
+  }
+
+  .bio-btn {
+    margin-top: 2rem;
+    width: 20rem;
+    height: 4rem;
+    font-size: 26pt;
+    font-weight: 400;
+  }
+
+  #projects {
+    padding-bottom: 4.5rem;
   }
 }

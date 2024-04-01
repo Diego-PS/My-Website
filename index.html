@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./styles/carousel.css">
   <script async type="text/javascript" src="./scripts/flip-card.js"></script>
   <script defer src="./scripts/carousel.js"></script>
+  <script src="./scripts/read-more.js"></script>
 </head>
 <body>
   <div class="background-image"></div>
@@ -38,42 +39,46 @@
       <a href="#skills"><div class="menu-item">
         <h3>Skills</h3>
       </div></a>
-      <div class="menu-item">
+      <a href="#contact"><div class="menu-item">
         <h3>Contact</h3>
-      </div>
+      </div></a>
     </div>
   </div>
   <div id="about-me" class="section-box">
     <h1 class="section-title">About me</h1>
-    <p>I always loved logic problems, they require a rationalization process that 
-      is very rewarding when you come up with a solution. 
-      For that, math was my favorite subject at school, and I am really 
-      good at it. Another thing that I have liked since my childhood is technology. 
-      I remember playing games on my father’s computer, an old Windows 95 machine, 
-      I could spend hours exploring its many softwares and trying to 
-      figure out what they were for.</p>
-    <p>
-      When in high school, I had to think about what subject 
-      I would choose for college, and I already knew 
-      I was tending to Computer Science (CS), but 
-      I didn’t even know how to print a Hello World, so in order to confirm that 
-      I would be fine with CS, I started to learn how to code in C++, 
-      enough for participating in the Olympiad of Informatics, and 
-      I fell in love with Computer Science.
-    </p>
-    <p>
-      Now in college, I realized that I was right about my choice. 
-      Throughout the course I learned how computers work, 
-      from their electric circuits to a high-level programming language. 
-      In 2023, I was selected to participate in a one-year 
-      Fellowship program with a company called Plank, where 
-      I had the opportunity to apply my knowledge in real products 
-      for startups in Silicon Valley, and learned how to effectively 
-      build various types of applications, including elements from backend, 
-      frontend and infrastructure. I am now looking forward to continuing my 
-      learning journey and working on new projects to make even more impact 
-      with my code.
-    </p>
+    <div class="p-cnt">
+      <p>I am fascinated by technology and have always loved logic problems, so pursuing Computer Science was a natural choice for me. Now, as a Software Engineer, I get to apply this type of logic to build meaningful applications, always seeking for more knowledge to enhance the quality and impact of my code.</p>
+      <p class="more">I always loved logic problems, they require a rationalization process that 
+        is very rewarding when you come up with a solution. 
+        For that, math was my favorite subject at school, and I am really 
+        good at it. Another thing that I have liked since my childhood is technology. 
+        I remember playing games on my father’s computer, an old Windows 95 machine, 
+        I could spend hours exploring its many softwares and trying to 
+        figure out what they were for.</p>
+      <p class="more">
+        When in high school, I had to think about what subject 
+        I would choose for college, and I already knew 
+        I was tending to Computer Science (CS), but 
+        I didn’t even know how to print a Hello World, so in order to confirm that 
+        I would be fine with CS, I started to learn how to code in C++, 
+        enough for participating in the Olympiad of Informatics, and 
+        I fell in love with Computer Science.
+      </p>
+      <p class="more">
+        Now in college, I realized that I was right about my choice. 
+        Throughout the course I learned how computers work, 
+        from their electric circuits to a high-level programming language. 
+        In 2023, I was selected to participate in a one-year 
+        Fellowship program with a company called Plank, where 
+        I had the opportunity to apply my knowledge in real products 
+        for startups in Silicon Valley, and learned how to effectively 
+        build various types of applications, including elements from backend, 
+        frontend and infrastructure. I am now looking forward to continuing my 
+        learning journey and working on new projects to make even more impact 
+        with my code.
+      </p>
+    </div>
+    <button class="bio-btn" onclick="switchReadMore()" id="myBtn">View full bio</button>
   </div>
   <div id="experience" class="section-box">
     <h1 class="section-title">Experience</h1>
@@ -92,15 +97,17 @@
           </div>
         </label>
         <div class="collapsible-item-content">
-          <p>
-            Each fellowship cohort learns and collaborates closely as a team, working in-person from one of our Plank centers, under the direct supervision and mentorship of Plank’s senior engineers throughout the the fellowship.
-          </p>
-          <p>
-            The first 2 months of the fellowship involves intensive training in the cutting-edge languages, frameworks, services, and methodologies.
-          </p>
-          <p>
-            The training period is followed by 10 months of working directly with Plank’s commercial partners on real world projects, interacting with senior executives and industry leaders from around the world, and getting a front row seat to how fast growing companies build amazing products.
-          </p>
+          <div class="p-cnt">
+            <p>
+              Each fellowship cohort learns and collaborates closely as a team, working in-person from one of our Plank centers, under the direct supervision and mentorship of Plank’s senior engineers throughout the the fellowship.
+            </p>
+            <p>
+              The first 2 months of the fellowship involves intensive training in the cutting-edge languages, frameworks, services, and methodologies.
+            </p>
+            <p>
+              The training period is followed by 10 months of working directly with Plank’s commercial partners on real world projects, interacting with senior executives and industry leaders from around the world, and getting a front row seat to how fast growing companies build amazing products.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -135,17 +142,19 @@
             <div class="experience-desc-div">
               <h1 class="experience-h1">Undergraduate Reseracher</h1>
               <h2 class="experience-h2">Apprenticeship</h2>
-              <h3 class="experience-h3">1 year and 5 months &nbsp;•&nbsp; Jun 2021 - Oct 2022</h3>
+              <h3 class="experience-h3">1 year 5 months &nbsp;•&nbsp; Jun 2021 - Oct 2022</h3>
             </div>
           </div>
         </label>
         <div class="collapsible-item-content">
-          <p>
-            From July 2021 until October 2022, I worked on the SINDH project, which involved analysis and mining of data from Disque Denúncia, in partnership with the Ministry of Women, Family and Human Rights (MMFDH), to obtain important insights to improve the service as a whole.
-          </p>
-          <p>
-            From November 2022, I've worked on an open source software called Lemonade, a tool to facilitate data analysis by providing a visual block interface with the most common and useful functions from libraries such as Scikit-Learn. I've participated in the addition of new NLP functions into the app, by researching, implementing and documenting these new features.
-          </p>
+          <div class="p-cnt">
+            <p>
+              From July 2021 until October 2022, I worked on the SINDH project, which involved analysis and mining of data from Disque Denúncia, in partnership with the Ministry of Women, Family and Human Rights (MMFDH), to obtain important insights to improve the service as a whole.
+            </p>
+            <p>
+              From November 2022, I've worked on an open source software called Lemonade, a tool to facilitate data analysis by providing a visual block interface with the most common and useful functions from libraries such as Scikit-Learn. I've participated in the addition of new NLP functions into the app, by researching, implementing and documenting these new features.
+            </p>
+          </div>
         </div>
       </div>
     </div>
